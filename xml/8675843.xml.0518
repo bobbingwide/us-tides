@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?> 
+<datainfo>
+<origin>NOAA/NOS/CO-OPS</origin>
+<disclaimer>Disclaimer: These data are based upon the latest information available as of the date of your request, and may differ from the published tide tables. </disclaimer>
+<datarange>Daily</datarange>
+<producttype> Tide Prediction </producttype>
+<stationname>Threemile Cut entrance, Darien River</stationname>
+<state>GA</state>
+<stationid>8675843</stationid>
+<stationtype>Subordinate</stationtype>
+<referencedToStationName>SAVANNAH RIVER ENTRANCE, FORT PULASKI</referencedToStationName>
+<referencedToStationId>8675843</referencedToStationId>
+<HeightOffsetLow>*1.05</HeightOffsetLow>
+<HeightOffsetHigh>* 1.03</HeightOffsetHigh>
+<TimeOffsetLow>55</TimeOffsetLow>
+<TimeOffsetHigh>44</TimeOffsetHigh>
+<BeginDate>20120518 12:00AM</BeginDate>
+<EndDate>20120519 11:59PM</EndDate>
+<dataUnits>Feet</dataUnits>
+<Timezone>LST/LDT</Timezone>
+<Datum>MLLW</Datum>
+<IntervalType>High/Low Tide Predictions</IntervalType>
+<data>
+<item>
+<date>2012/05/18</date>
+<day>Fri</day>
+<time>02:10 AM</time>
+<pred>0.66</pred>
+<highlow>L</highlow>
+</item>
+<item>
+<date>2012/05/18</date>
+<day>Fri</day>
+<time>07:50 AM</time>
+<pred>6.64</pred>
+<highlow>H</highlow>
+</item>
+<item>
+<date>2012/05/18</date>
+<day>Fri</day>
+<time>02:11 PM</time>
+<pred>0.16</pred>
+<highlow>L</highlow>
+</item>
+<item>
+<date>2012/05/18</date>
+<day>Fri</day>
+<time>08:07 PM</time>
+<pred>7.81</pred>
+<highlow>H</highlow>
+</item>
+<item>
+<date>2012/05/19</date>
+<day>Sat</day>
+<time>02:53 AM</time>
+<pred>0.54</pred>
+<highlow>L</highlow>
+</item>
+<item>
+<date>2012/05/19</date>
+<day>Sat</day>
+<time>08:33 AM</time>
+<pred>6.64</pred>
+<highlow>H</highlow>
+</item>
+<item>
+<date>2012/05/19</date>
+<day>Sat</day>
+<time>02:52 PM</time>
+<pred>0.15</pred>
+<highlow>L</highlow>
+</item>
+<item>
+<date>2012/05/19</date>
+<day>Sat</day>
+<time>08:48 PM</time>
+<pred>7.9</pred>
+<highlow>H</highlow>
+</item>
+</data>
+</datainfo>
