@@ -4,7 +4,7 @@ Donate link: http://www.oik-plugins.com/oik/oik-donate/
 Tags: shortcode, tides, US, heights and times, [us_tides]
 Requires: 3.0.4
 Tested up to: 3.4.1
-Stable tag: 0.1
+Stable tag: 0.2
 
 Tide heights and times for US tidal stations
 

@@ -5,7 +5,7 @@
 Plugin Name: US tides - heights and times
 Plugin URI: http://www.oik-plugins.com/oik-plugins/us-tides
 Description: shortcode for US tide times and heights [us_tides]
-Version: 0.1
+Version: 0.2
 Author: bobbingwide
 Author URI: http://www.bobbingwide.com
 License: GPL2
