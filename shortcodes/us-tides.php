@@ -1,8 +1,7 @@
 <?php 
-
 /*
 
-    Copyright 2012 Bobbing Wide (email : herb@bobbingwide.com )
+    Copyright 2012, 2013 Bobbing Wide (email : herb@bobbingwide.com )
 
     This program is free software; you can redistribute it and/or modify
     it under the terms of the GNU General Public License version 2,
@@ -134,6 +133,7 @@ function us_get_todays_date( $response ) {
  
  * 8675843 is Threemile Cut Entrance, Darien River, GA
  * 8423745 is Portsmouth, New Hampshire
+ * @link http://tidesandcurrents.noaa.gov/noaatidepredictions/NOAATidesFacade.jsp?Stationid=8423745&datatype=Annual%20XML
  */
 function us_tideurl_namify( $station) {
   $newurl = "http://tidesandcurrents.noaa.gov/noaatidepredictions/NOAATidesFacade.jsp?datatype=Annual XML&Stationid=" . $station ;
@@ -146,9 +146,12 @@ function us_load_xml_file( $station="8423745" ) {
   if ( $load_file ) {
     $response = simplexml_load_file( $file );
     // Need to check the year 
-    $today = bw_format_date( "Ymd h:i" );
-    if ( $response->EndDate <= $today )
+    $today = bw_format_date( null, "Ymd h:i" );
+      bw_trace2( $response->EndDate, "EndDate" );
+      bw_trace2( $today, "TODAY" );
+    if ( $response->EndDate <= $today ) {
       $load_file = false;
+    }  
     
   } 
   if ( !$load_file ) {
@@ -240,6 +243,6 @@ function us_tides__example( $shortcode='us_tides' ) {
   $text = "To display tide times and heights for Portsmouth, NH (Station ID: 8423745)" ;
   $example = 'station=8423745';
   bw_invoke_shortcode( $shortcode, $example, $text );
-  p( "The information displayed comes from the NOAA Tides and Currents website" );
+  p( "The information displayed comes from the NOAA Tides and Currents website." );
 
 }

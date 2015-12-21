@@ -3,13 +3,13 @@ Contributors: bobbingwide
 Donate link: http://www.oik-plugins.com/oik/oik-donate/
 Tags: shortcode, tides, US, heights and times, [us_tides]
 Requires: 3.0.4
-Tested up to: 3.4.1
-Stable tag: 0.2
+Tested up to: 3.5
+Stable tag: 0.2.0120
 
 Tide heights and times for US tidal stations
 
 == Description ==
-us-tides displays tide times and heights for a particular location in the US. 
+us-tides displays saltwater tide times and heights for a particular location in the US. 
 The information that is displayed is obtained from the [NOAA Tides and Currents](http://tidesandcurrents.noaa.gov) website
 You find the station id for your nearest station and use this in the [us_tides] shortcode.
 
@@ -32,22 +32,27 @@ Download oik from
 [oik download](http://wordpress.org/extend/plugins/oik/0
 
 == Frequently Asked Questions ==
+= What is the shortcode syntax? =
+`[us_tides
+station="8423745|StationId - StationId for tide information"
+link="y|n - Include a link to Tides and Currents website"
+date_format="M d,Y|date format - PHP date format"]`
+
 = How do I find the value for station? =
 Visit the [NOAA Tides and Currents website](http://tidesandcurrents.noaa.gov/tide_predictions.shtml) and drill down.
 
 = What is the default station? =
 The default is for Portsmouth, New Hampshire... because the author comes from Portsmouth, Hampshire, UK
 
-
 = What if I don't live in the US? =
-If you live in the UK then you can use the uk-tides shortcode
+If you live in the UK then you can use the [uk-tides WordPress plugin](http://wordpress.org/extend/plugins/uk-tides/) 
 If you can point us to a resource for other locations then it should be possible to develop a very similar solution.
 
-= How does it work =
+= How does it work? =
 
 1. The plugin will look for an XML file with the station id in the name
 2. If not present, or it's out of date it downloads a new Annual XML file
-3. It loads the XML file and find the matching records - high and low times and heights
+3. It loads the XML file and finds the matching records - high and low times and heights
 
 = How big is each XML file? =
 Between 250 and 300K
@@ -58,16 +63,22 @@ Yes. Just use a different station ID parameter.
 = Can I theme the output? =
 Yes. Each field is wrapped in XHTML tags
 
-
 == Screenshots ==
 1. sample output for Portsmouth, New Hampshire
 
 == Upgrade Notice ==
-= 1.0 =
+= 0.2.0120 = 
+* Dependent upon oik v1.17
+
+= 0.2 =
 * Initial version. Requires oik v1.13 or higher
 
 == Changelog ==
-= 1.0 =
+= 0.2.0120 =
+* Changed: Includes default XML file for Portsmouth, NH for 2013
+* Added: Dependency logic on oik
+
+= 0.2 =
 * initial version. Works with oik version 1.13
 
 
