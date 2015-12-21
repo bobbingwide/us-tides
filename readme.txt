@@ -1,10 +1,10 @@
 === us-tides ===
-Contributors: bobbingwide
+Contributors: bobbingwide, vslgloik
 Donate link: http://www.oik-plugins.com/oik/oik-donate/
-Tags: shortcode, tides, US, heights and times, [us_tides]
-Requires: 3.0.4
-Tested up to: 3.5
-Stable tag: 0.2.0120
+Tags: shortcode, shortcodes, tides, US, heights and times, [us_tides], saltwater
+Requires: 4.3
+Tested up to: 4.4
+Stable tag: 0.3.0
 
 Tide heights and times for US tidal stations
 
@@ -64,9 +64,13 @@ Yes. Just use a different station ID parameter.
 Yes. Each field is wrapped in XHTML tags
 
 == Screenshots ==
-1. sample output for Portsmouth, New Hampshire
+1. Sample output for Portsmouth, New Hampshire
+2. Sample output for Gosport, Isles of Shoals
 
 == Upgrade Notice ==
+= 0.3.0 = 
+* Tested with WordPress 4.4. Depends on oik v2.5 or higher
+
 = 0.2.0120 = 
 * Dependent upon oik v1.17
 
@@ -74,13 +78,16 @@ Yes. Each field is wrapped in XHTML tags
 * Initial version. Requires oik v1.13 or higher
 
 == Changelog ==
+= 0.3.0 = 
+* Fixed: Remove extraneous text displayed for tide lines. github issues 1
+* Changed: Update sample XML files. github issues 2
+
 = 0.2.0120 =
 * Changed: Includes default XML file for Portsmouth, NH for 2013
 * Added: Dependency logic on oik
 
 = 0.2 =
 * initial version. Works with oik version 1.13
-
 
 == Further reading ==
 If you want to read more about the oik plugins then please visit the
